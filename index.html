@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gyan Sangam - Your ultimate resource for UPSC IAS preparation. Comprehensive study material for Prelims, Mains, and Interview.">
+    <meta name="keywords"
+        content="UPSC, IAS, Civil Services, IPS, IFS, Prelims, Mains, General Studies, CSAT, Current Affairs">
+    <title>Gyan Sangam - UPSC IAS Preparation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Gyan Sangam</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stages">Exam Stages</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#current-affairs">Current Affairs</a></li>
+                <li><a href="#quiz">Daily Quiz</a></li>
+                <li><a href="#updates">Updates</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Gyan Sangam</h1>
+            <p class="hero-subtitle">Your Pathway to LBSNAA & Civil Services Excellence</p>
+            <div class="hero-image">
+                <img src="upsc_hero_banner.png" alt="UPSC Civil Services">
+            </div>
+            <div class="cta-buttons">
+                <a href="#stages" class="btn btn-primary" id="exploreBtn">Start Preparation</a>
+                <a href="#quiz" class="btn btn-secondary" id="practiceBtn">Daily Quiz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Stages Section -->
+    <section class="section" id="stages">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">UPSC CSE Stages</h2>
+                <p class="section-description">Comprehensive guidance for every step of the journey</p>
+            </div>
+            <div class="card-grid">
+                <div class="card scroll-animate" id="stagePrelims">
+                    <div class="card-icon">📝</div>
+                    <h3 class="card-title">Prelims (CSE)</h3>
+                    <p class="card-description">Objective type papers: General Studies I and CSAT (GS II). Focus on
+                        conceptual clarity and practice.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• GS Paper I (100 Qs, 200 Marks)</li>
+                        <li>• CSAT (80 Qs, 200 Marks) - Qualifying</li>
+                        <li>• Negative Marking (1/3rd)</li>
+                        <li>• Cut-off based on GS I only</li>
+                    </ul>
+                </div>
+                <div class="card scroll-animate" id="stageMains">
+                    <div class="card-icon">✍️</div>
+                    <h3 class="card-title">Mains (Written)</h3>
+                    <p class="card-description">9 Subjective papers including Essay, GS I-IV, and Optional Subjects.
+                        In-depth analysis required.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Essay & 4 GS Papers</li>
+                        <li>• 2 Optional Papers</li>
+                        <li>• 2 Language Papers (Qualifying)</li>
+                        <li>• Total Marks: 1750</li>
+                    </ul>
+                </div>
+                <div class="card scroll-animate" id="stageInterview">
+                    <div class="card-icon">🤝</div>
+                    <h3 class="card-title">Personality Test</h3>
+                    <p class="card-description">The final interview at Dholpur House. Assessment of intellectual
+                        qualities and social traits.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• DAF Analysis</li>
+                        <li>• Current Affairs & Hobbies</li>
+                        <li>• Situational Questions</li>
+                        <li>• Marks: 275</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="section" id="subjects">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">General Studies Subjects</h2>
+                <p class="section-description">Core syllabus coverage for Prelims and Mains</p>
+            </div>
+            <div class="card-grid">
+                <div class="card scroll-animate" id="subjectHistory">
+                    <div class="card-icon">🏛️</div>
+                    <h3 class="card-title">History & Culture</h3>
+                    <p class="card-description">Ancient, Medieval, Modern India, Art & Culture, and World History.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Freedom Struggle</li>
+                        <li>• Post-Independence India</li>
+                        <li>• Indian Art Forms</li>
+                        <li>• World Wars & Revolutions</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Ancient: R.S. Sharma (NCERT)</li>
+                            <li>• Medieval: Satish Chandra (NCERT)</li>
+                            <li>• Modern: Spectrum (Rajiv Ahir)</li>
+                            <li>• Art & Culture: Nitin Singhania</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://ncert.nic.in/textbook.php" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• NCERT History
+                                    (6-12)</a></li>
+                            <li><a href="https://nios.ac.in/online-course-material/secondary-courses/indian-culture-and-heritage-(223)-syllabus.aspx"
+                                    target="_blank" style="color: var(--secondary-color); text-decoration: none;">• NIOS
+                                    Art & Culture</a></li>
+                            <li><a href="https://ccrtindia.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• CCRT Art &
+                                    Culture</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="subjectGeography">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">Geography</h3>
+                    <p class="card-description">Physical, Social, and Economic Geography of India and the World.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Physical Features</li>
+                        <li>• Climatology & Oceanography</li>
+                        <li>• Resources & Industries</li>
+                        <li>• Human Geography</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Physical: GC Leong</li>
+                            <li>• Indian Geo: Majid Husain/Khullar</li>
+                            <li>• Atlas: Oxford Student Atlas</li>
+                            <li>• NCERTs: Class 11 & 12 (Must)</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://ncert.nic.in/textbook.php" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• NCERT Geography
+                                    (11-12)</a></li>
+                            <li><a href="https://bhuvan.nrsc.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• ISRO Bhuvan
+                                    (Mapping)</a></li>
+                            <li><a href="https://vikaspedia.in/agriculture" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Vikaspedia
+                                    (Agriculture)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="subjectPolity">
+                    <div class="card-icon">⚖️</div>
+                    <h3 class="card-title">Polity & Governance</h3>
+                    <p class="card-description">Indian Constitution, Political System, Governance, and Social Justice.
+                    </p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Constitution & Preamble</li>
+                        <li>• Parliament & State Legislatures</li>
+                        <li>• Judiciary & Rights</li>
+                        <li>• Governance & Policies</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Indian Polity: M. Laxmikanth</li>
+                            <li>• Governance: M. Laxmikanth</li>
+                            <li>• NCERT: Class 11 (Constitution)</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://legislative.gov.in/constitution-of-india" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Constitution of
+                                    India</a></li>
+                            <li><a href="https://prsindia.org/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• PRS Legislative
+                                    Research</a></li>
+                            <li><a href="https://vikaspedia.in/e-governance" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Vikaspedia
+                                    (e-Gov)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="subjectEconomy">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">Indian Economy</h3>
+                    <p class="card-description">Economic Development, Budget, Survey, and Inclusive Growth.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Planning & Mobilization</li>
+                        <li>• Budget & Economic Survey</li>
+                        <li>• Agriculture & Food Security</li>
+                        <li>• Infrastructure & Investment</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Indian Economy: Ramesh Singh</li>
+                            <li>• Macroeconomics: NCERT Class 12</li>
+                            <li>• Economic Survey & Budget</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://www.indiabudget.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Union Budget &
+                                    Survey</a></li>
+                            <li><a href="https://m.rbi.org.in/Scripts/FAQView.aspx" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• RBI FAQs</a></li>
+                            <li><a href="https://vikaspedia.in/social-welfare" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Vikaspedia
+                                    (Welfare)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="subjectEthics">
+                    <div class="card-icon">🧠</div>
+                    <h3 class="card-title">Ethics (GS IV)</h3>
+                    <p class="card-description">Ethics, Integrity, and Aptitude. Case studies and theoretical concepts.
+                    </p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Human Values</li>
+                        <li>• Attitude & Aptitude</li>
+                        <li>• Emotional Intelligence</li>
+                        <li>• Probity in Governance</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Lexicon for Ethics</li>
+                            <li>• G. Subba Rao</li>
+                            <li>• 2nd ARC Reports</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://darpg.gov.in/arc-reports" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• 2nd ARC Reports</a>
+                            </li>
+                            <li><a href="https://egyankosh.ac.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• IGNOU Ethics
+                                    Material</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="subjectEnv">
+                    <div class="card-icon">🌱</div>
+                    <h3 class="card-title">Environment & S&T</h3>
+                    <p class="card-description">Ecology, Biodiversity, Climate Change, and Science & Technology.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• Conservation & Pollution</li>
+                        <li>• Climate Change Conventions</li>
+                        <li>• Space & Defense Tech</li>
+                        <li>• Biotech & Nanotech</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">📚 Standard
+                            Books:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                            <li>• Shankar IAS Environment</li>
+                            <li>• PMF IAS Environment</li>
+                            <li>• Biology NCERT (Class 12)</li>
+                        </ul>
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Open
+                            Resources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://www.pmfias.com/environment-notes-shankar-ias-environment-summary/"
+                                    target="_blank" style="color: var(--secondary-color); text-decoration: none;">• PMF
+                                    IAS Environment</a></li>
+                            <li><a href="https://www.isro.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• ISRO Official</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Affairs Section -->
+    <section class="section" id="current-affairs">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">Current Affairs Analysis</h2>
+                <p class="section-description">Daily analysis from The Hindu, Indian Express, and PIB</p>
+            </div>
+            <div class="card-grid">
+                <div class="card scroll-animate" id="newsNational">
+                    <div class="card-icon">🇮🇳</div>
+                    <h3 class="card-title">National Issues (PIB/Hindu)</h3>
+                    <p class="card-description">Latest updates from PIB and National Dailies.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• <strong>PIB:</strong> Rare Earth Magnet Scheme</li>
+                        <li>• <strong>Polity:</strong> Aadhaar Deactivation Drive</li>
+                        <li>• <strong>Economy:</strong> Surging LPG Consumption</li>
+                        <li>• <strong>Govt:</strong> New Digital India Act</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Free
+                            Sources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://pib.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• PIB Releases
+                                    (Official)</a></li>
+                            <li><a href="https://www.pmfias.com/current-affairs/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• PMF IAS Daily CA</a>
+                            </li>
+                            <li><a href="https://www.thehindu.com/news/national/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• The Hindu
+                                    National</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card scroll-animate" id="newsInternational">
+                    <div class="card-icon">🌐</div>
+                    <h3 class="card-title">International Relations</h3>
+                    <p class="card-description">India's foreign policy and global events.</p>
+                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                        <li>• <strong>G20:</strong> Post-Summit Analysis</li>
+                        <li>• <strong>India-US:</strong> Critical Tech Deal</li>
+                        <li>• <strong>ASEAN:</strong> Look East Policy 2.0</li>
+                        <li>• <strong>Climate:</strong> COP29 Key Outcomes</li>
+                    </ul>
+                    <div class="resources-section"
+                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                        <h4 style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">🔗 Free
+                            Sources:</h4>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                            <li><a href="https://indianexpress.com/section/world/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• Indian Express
+                                    World</a></li>
+                            <li><a href="https://www.mea.gov.in/" target="_blank"
+                                    style="color: var(--secondary-color); text-decoration: none;">• MEA Briefings</a>
+                            </li>
+                            <li><a href="https://www.insightsonindia.com/current-affairs/" target="_blank" <div
+                                    class="card scroll-animate" id="newsEditorial">
+                                    <div class="card-icon">📰</div>
+                                    <h3 class="card-title">Editorial Analysis</h3>
+                                    <p class="card-description">In-depth analysis for Mains answer writing.</p>
+                                    <ul style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
+                                        <li>• <strong>Hindu:</strong> "The Governor's Role"</li>
+                                        <li>• <strong>IE Explained:</strong> "Delimitation Debate"</li>
+                                        <li>• <strong>Opinion:</strong> "Green Hydrogen Future"</li>
+                                        <li>• <strong>Mains:</strong> Answer Writing Practice</li>
+                                    </ul>
+                                    <div class="resources-section"
+                                        style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                                        <h4
+                                            style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                                            🔗 Free
+                                            Sources:</h4>
+                                        <ul style="font-size: 0.85rem; color: var(--text-secondary);">
+                                            <li><a href="https://www.thehindu.com/opinion/editorial/" target="_blank"
+                                                    style="color: var(--secondary-color); text-decoration: none;">• The
+                                                    Hindu
+                                                    Editorials</a></li>
+                                            <li><a href="https://indianexpress.com/section/explained/" target="_blank"
+                                                    style="color: var(--secondary-color); text-decoration: none;">• IE
+                                                    Explained</a>
+                                            </li>
+                                            <li><a href="https://vajiramandravi.com/upsc-daily-current-affairs/editorial-analysis/"
+                                                    target="_blank"
+                                                    style="color: var(--secondary-color); text-decoration: none;">•
+                                                    Vajiram Editorial Analysis</a></li>
+                                        </ul>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Previous Year Questions (PYQ) Section -->
+    <section class="section" id="pyq">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">Previous Year Questions (1979-2024)</h2>
+                <p class="section-description">Subject-wise interactive quiz from past 45 years</p>
+            </div>
+
+            <div class="pyq-container scroll-animate">
+                <!-- Subject Selectors -->
+                <div class="subject-selector">
+                    <button class="subject-btn active" data-subject="history"
+                        onclick="loadPYQSubject('history')">History</button>
+                    <button class="subject-btn" data-subject="geography"
+                        onclick="loadPYQSubject('geography')">Geography</button>
+                    <button class="subject-btn" data-subject="polity" onclick="loadPYQSubject('polity')">Polity</button>
+                    <button class="subject-btn" data-subject="economy"
+                        onclick="loadPYQSubject('economy')">Economy</button>
+                    <button class="subject-btn" data-subject="environment"
+                        onclick="loadPYQSubject('environment')">Environment</button>
+                    <button class="subject-btn" data-subject="science"
+                        onclick="loadPYQSubject('science')">Science</button>
+                </div>
+
+                <!-- Quiz Interface -->
+                <div id="pyq-container" class="quiz-interface">
+                    <!-- Content loaded via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates Timeline -->
+    <section class="section" id="updates">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">Latest Notifications</h2>
+                <p class="section-description">UPSC Notifications and Important Updates</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-animate" id="update1">
+                    <div class="timeline-date">Nov 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">UPSC CSE Mains 2025 Results</h3>
+                        <p class="timeline-description">The results for the Civil Services (Main) Examination 2025 are
+                            expected to be declared soon. Keep checking the official website.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animate" id="update2">
+                    <div class="timeline-date">Oct 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">DAF II Released</h3>
+                        <p class="timeline-description">Detailed Application Form (DAF) II for the Personality Test is
+                            now available for qualified candidates.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animate" id="update3">
+                    <div class="timeline-date">Sep 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">New Optional Subject Added</h3>
+                        <p class="timeline-description">UPSC has introduced a new optional subject 'Artificial
+                            Intelligence & Governance' for the 2026 cycle (Hypothetical).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Gyan Sangam</h3>
+                <p style="color: var(--text-secondary);">Dedicated to empowering UPSC aspirants with quality content,
+                    strategy, and guidance for the Civil Services Examination.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#stages">Exam Stages</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#current-affairs">Current Affairs</a></li>
+                    <li><a href="#pyq">Previous Year Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">NCERT Notes</a></li>
+                    <li><a href="#">Standard Books</a></li>
+                    <li><a href="#">Topper's Copies</a></li>
+                    <li><a href="#">Previous Year Papers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">📱 Telegram Channel</a></li>
+                    <li><a href="#">📺 YouTube Channel</a></li>
+                    <li><a href="#">✉️ Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gyan Sangam. All rights reserved. | Satyameva Jayate</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
