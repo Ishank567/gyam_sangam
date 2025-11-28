@@ -265,30 +265,107 @@ console.log('%cJai Hind! 📚', 'color: #10b981; font-size: 14px;');
 
 const pyqData = {
     history: [
-        { year: 2022, question: "In the Government of India Act 1919, the functions of Provincial Government were divided into 'Reserved' and 'Transferred' subjects. Which of the following were treated as 'Reserved' subjects?", options: ["Administration of Justice", "Local Self-Government", "Land Revenue", "Police"], answer: 2 }, // 1, 3 and 4 (Justice, Land Revenue, Police) are reserved. Local Self-Govt is transferred. Wait, options need to be better formatted for single choice or multi-select. Let's stick to single choice for simplicity or rephrase.
-        // Rephrasing for single correct option format
-        { year: 2021, question: "With reference to the history of ancient India, which of the following was/were common to both Buddhism and Jainism?", options: ["Avoidance of extremities of penance and enjoyment", "Indifference to the authority of the Vedas", "Denial of efficacy of rituals", "Both 2 and 3"], answer: 3 },
-        { year: 2020, question: "The Gandhi-Irwin Pact included which of the following?", options: ["Invitation to Congress to participate in the Round Table Conference", "Withdrawal of Ordinances promulgated in connection with the Civil Disobedience Movement", "Acceptance of Gandhiji's suggestion for enquiry into police excesses", "Release of only those prisoners who were not charged with violence"], answer: 0 }, // Actually multiple statements. Let's use simple direct questions.
-        { year: 2019, question: "With reference to the British colonial rule in India, consider the following statements: Mahatma Gandhi was instrumental in the abolition of the system of 'indentured labour'.", options: ["True", "False"], answer: 0 },
-        { year: 1995, question: "Who among the following was the first Governor-General of Bengal?", options: ["Robert Clive", "Warren Hastings", "Lord Mayo", "Lord Dalhousie"], answer: 1 }
+        {
+            year: 2022,
+            question: "In the Government of India Act 1919, the functions of Provincial Government were divided into 'Reserved' and 'Transferred' subjects. Which of the following were treated as 'Reserved' subjects?",
+            options: ["Administration of Justice", "Local Self-Government", "Land Revenue", "Police"],
+            answer: 2,
+            explanation: "Reserved subjects included Police, Jails, Land Revenue, Irrigation, and Forests. Transferred subjects included Education, Local Self-Government, Public Health, and Sanitation."
+        },
+        {
+            year: 2021,
+            question: "With reference to the history of ancient India, which of the following was/were common to both Buddhism and Jainism?",
+            options: ["Avoidance of extremities of penance and enjoyment", "Indifference to the authority of the Vedas", "Denial of efficacy of rituals", "Both 2 and 3"],
+            answer: 3,
+            explanation: "Both Buddhism and Jainism rejected the authority of the Vedas and the efficacy of rituals. However, Jainism advocated extreme penance, while Buddhism followed the 'Middle Path'."
+        },
+        {
+            year: 2020,
+            question: "The Gandhi-Irwin Pact included which of the following?",
+            options: ["Invitation to Congress to participate in the Round Table Conference", "Withdrawal of Ordinances promulgated in connection with the Civil Disobedience Movement", "Acceptance of Gandhiji's suggestion for enquiry into police excesses", "Release of only those prisoners who were not charged with violence"],
+            answer: 0,
+            explanation: "The pact included the immediate release of all political prisoners not convicted of violence, remission of all fines not yet collected, return of confiscated lands not yet sold to third parties, and lenient treatment to those government servants who had resigned."
+        },
+        {
+            year: 2019,
+            question: "With reference to the British colonial rule in India, consider the following statements: Mahatma Gandhi was instrumental in the abolition of the system of 'indentured labour'.",
+            options: ["True", "False"],
+            answer: 0,
+            explanation: "Mahatma Gandhi played a pivotal role in the campaign against the indenture system, which was finally abolished in 1917."
+        },
+        {
+            year: 1995,
+            question: "Who among the following was the first Governor-General of Bengal?",
+            options: ["Robert Clive", "Warren Hastings", "Lord Mayo", "Lord Dalhousie"],
+            answer: 1,
+            explanation: "Warren Hastings became the first Governor-General of Bengal in 1773 under the Regulating Act of 1773."
+        }
     ],
     geography: [
-        { year: 2023, question: "Consider the following trees: 1. Jackfruit 2. Mahua 3. Teak. How many of the above are deciduous trees?", options: ["Only one", "Only two", "All three", "None"], answer: 1 },
-        { year: 2010, question: "Which one of the following is the largest committee of the Parliament?", options: ["The Committee on Public Accounts", "The Committee on Estimates", "The Committee on Public Undertakings", "The Committee on Petitions"], answer: 1 }
+        {
+            year: 2023,
+            question: "Consider the following trees: 1. Jackfruit 2. Mahua 3. Teak. How many of the above are deciduous trees?",
+            options: ["Only one", "Only two", "All three", "None"],
+            answer: 2,
+            explanation: "Jackfruit is an evergreen tree. Mahua and Teak are deciduous trees found in moist deciduous forests."
+        },
+        {
+            year: 2010,
+            question: "Which one of the following is the largest committee of the Parliament?",
+            options: ["The Committee on Public Accounts", "The Committee on Estimates", "The Committee on Public Undertakings", "The Committee on Petitions"],
+            answer: 1,
+            explanation: "The Estimates Committee is the largest committee of the Parliament, consisting of 30 members, all from the Lok Sabha."
+        }
     ],
     polity: [
-        { year: 2017, question: "One of the implications of equality in society is the absence of:", options: ["Privileges", "Restraints", "Competition", "Ideology"], answer: 0 },
-        { year: 2015, question: "The ideal of 'Welfare State' in the Indian Constitution is enshrined in its:", options: ["Preamble", "Directive Principles of State Policy", "Fundamental Rights", "Seventh Schedule"], answer: 1 }
+        {
+            year: 2017,
+            question: "One of the implications of equality in society is the absence of:",
+            options: ["Privileges", "Restraints", "Competition", "Ideology"],
+            answer: 0,
+            explanation: "Equality implies the absence of special privileges to any section of society and the provision of adequate opportunities for all individuals without any discrimination."
+        },
+        {
+            year: 2015,
+            question: "The ideal of 'Welfare State' in the Indian Constitution is enshrined in its:",
+            options: ["Preamble", "Directive Principles of State Policy", "Fundamental Rights", "Seventh Schedule"],
+            answer: 1,
+            explanation: "The Directive Principles of State Policy (Part IV, Articles 36-51) embody the concept of a Welfare State."
+        }
     ],
     economy: [
-        { year: 2022, question: "Rapid Financing Instrument' and 'Rapid Credit Facility' are related to the provisions of lending by which one of the following?", options: ["Asian Development Bank", "International Monetary Fund", "United Nations Environment Programme Finance Initiative", "World Bank"], answer: 1 },
-        { year: 2013, question: "Disguised unemployment generally means", options: ["Large number of people remain unemployed", "Alternative employment is not available", "Marginal productivity of labour is zero", "Productivity of workers is low"], answer: 2 }
+        {
+            year: 2022,
+            question: "Rapid Financing Instrument' and 'Rapid Credit Facility' are related to the provisions of lending by which one of the following?",
+            options: ["Asian Development Bank", "International Monetary Fund", "United Nations Environment Programme Finance Initiative", "World Bank"],
+            answer: 1,
+            explanation: "The RFI and RCF are lending facilities of the International Monetary Fund (IMF) to provide rapid financial assistance to member countries facing urgent balance of payments needs."
+        },
+        {
+            year: 2013,
+            question: "Disguised unemployment generally means",
+            options: ["Large number of people remain unemployed", "Alternative employment is not available", "Marginal productivity of labour is zero", "Productivity of workers is low"],
+            answer: 2,
+            explanation: "Disguised unemployment occurs when more people are employed than actually needed, so the marginal productivity of the extra workers is zero."
+        }
     ],
     environment: [
-        { year: 2021, question: "The 'Common Carbon Metric', supported by UNEP, has been developed for", options: ["Assessing the carbon footprint of building operations around the world", "Enabling commercial farming entities around the world to enter carbon emission trading", "Enabling governments to assess the overall carbon footprint caused by their countries", "Assessing the overall carbon footprint caused by the use of fossil fuels by the world in a unit time"], answer: 0 }
+        {
+            year: 2021,
+            question: "The 'Common Carbon Metric', supported by UNEP, has been developed for",
+            options: ["Assessing the carbon footprint of building operations around the world", "Enabling commercial farming entities around the world to enter carbon emission trading", "Enabling governments to assess the overall carbon footprint caused by their countries", "Assessing the overall carbon footprint caused by the use of fossil fuels by the world in a unit time"],
+            answer: 0,
+            explanation: "The Common Carbon Metric is a protocol for measuring energy use and reporting greenhouse gas emissions from building operations."
+        }
     ],
     science: [
-        { year: 2020, question: "Which of the following statements is/are correct regarding the general difference between plant and animal cells?", options: ["Plant cells have cellulose cell walls whilst animal cells do not", "Plant cells do not have plasma membrane unlike animal cells", "Mature plant cell has one large vacuole whilst animal cell has many small vacuoles", "1 and 3 only"], answer: 3 }
+        {
+            year: 2020,
+            question: "Which of the following statements is/are correct regarding the general difference between plant and animal cells?",
+            options: ["Plant cells have cellulose cell walls whilst animal cells do not", "Plant cells do not have plasma membrane unlike animal cells", "Mature plant cell has one large vacuole whilst animal cell has many small vacuoles", "1 and 3 only"],
+            answer: 3,
+            explanation: "Plant cells have a rigid cell wall made of cellulose and a large central vacuole. Animal cells lack a cell wall and have small, temporary vacuoles."
+        }
     ]
 };
 
@@ -348,8 +425,9 @@ function loadPYQQuestion() {
     });
 
     html += `</div>
-        <div class="pyq-controls" id="pyq-controls" style="display:none;">
+        <div class="pyq-controls" id="pyq-controls" style="display:none; flex-direction: column; gap: 1rem;">
             <div id="pyq-feedback" style="font-weight:bold;"></div>
+            <div id="pyq-explanation" style="background: #f8fafc; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--primary-color); font-size: 0.9rem; color: var(--text-secondary);"></div>
             <button class="btn btn-primary" onclick="nextPYQ()">Next Question</button>
         </div>
     `;
@@ -362,6 +440,7 @@ function checkPYQAnswer(selectedIdx, element) {
     const q = questions[currentPYQIndex];
     const controls = document.getElementById('pyq-controls');
     const feedback = document.getElementById('pyq-feedback');
+    const explanation = document.getElementById('pyq-explanation');
     const options = document.querySelectorAll('.pyq-option');
 
     // Disable further clicks
@@ -383,6 +462,7 @@ function checkPYQAnswer(selectedIdx, element) {
         options[q.answer].style.borderColor = '#22c55e';
     }
 
+    explanation.innerHTML = `<strong>Explanation:</strong> ${q.explanation}`;
     controls.style.display = 'flex';
 }
 
